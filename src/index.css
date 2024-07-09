@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Header css start */
+
+.header-container {
+  background-color: #645cff;
+  color: #fff;
+  padding: 1.5rem 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  position: relative;
+  right: 0.325rem;
+}
+
+.nav-container .cart {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav-container .cart i {
+  font-size: 2.375rem;
+}
+
+.nav-container .cart-amount {
+  position: absolute;
+  top: -1rem;
+  right: -1.5rem;
+  width: 1.825rem;
+  height: 1.825rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #a29dff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.325rem;
+}
+
+/* Header css end */
+
+/* Product css start */
+
+.items-container {
+  padding: 1.5rem 20rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+
+.items-container h2 {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.products-details-container {
+  display: flex;
+  align-items: center;
+}
+
+.products-details-container img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+.products-details-container .product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.375rem;
+}
+
+.product-details .product-name {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #1f1f1f;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.product-details .product-price {
+  color: #7e7e7e;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.product-details .product-clear {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #6d7ffe;
+  letter-spacing: 1.8px;
+  align-self: flex-start;
+  transition: color 200ms ease;
+}
+
+.product-details .product-clear:hover {
+  color: #142ffe;
+}
+
+.product-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-controls .control-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: all 200ms ease;
+}
+
+.product-controls .control-btn i {
+  font-size: 2rem;
+  color: #6d7ffe;
+  transition: all 200ms ease;
+}
+
+.product-controls .control-btn:hover i {
+  color: #142ffe;
+}
+
+.product-controls .product-amount {
+  font-size: 1.2rem;
+}
+
+/* Product css end */
+
+/* Footer css start */
+.bottom {
+  width: 100%;
+  height: 0.105rem;
+  background-color: #afb0b3;
+  margin-bottom: 1.5rem;
+}
+
+.footer-container {
+  padding: 2rem 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container .total-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.total-container .total-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.total-container .total-price {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: #645cff;
+  color: #fff;
+  padding: 0.25rem 0.715rem;
+  border-radius: 0.5rem;
+}
+
+.footer-container .clear-cart-btn {
+  align-self: center;
+  border: none;
+  background-color: #a29dff;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.425rem;
+  transition: all 200ms ease;
+}
+
+.footer-container .clear-cart-btn:hover {
+  background-color: #091995;
+}
+/* Footer css end */
+
+.empty {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #898989;
+}
